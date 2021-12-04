@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e Vídeo</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas.
+    </h1>
+    <p>Tente aumentar ou diminuir o navegador, ou abrir esse site em outros dispositivos.</p>
+    <!--Usando Picture temos uma cascata de sources para usar.-->
+    <picture>
+        <source media="(max-width:750px )" srcset="img/p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/fot-g.png" alt="Foto Grande">
+    </picture>
+    <h1>Adicionando músicas</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <p>Usando a tag "AUDIO" podemos inserir a música desejada.</p>
+    <!--<audio src="medias/Clean and Dance - An Jone.mp3" controls autoplay></audio>
+    -->
+    <audio autoplay controls loop>
+        <source media="medias/music.mp3" srcset="" type="audio/mpeg">
+        <source media="medias/music.mp3" srcset="" type="audio/dgg">
+        <source media="medias/music.mp3" srcset="" type="audio/wav">
+        <p>Parece que seu nagegador não consegue reproduzir o nosso áudio. <a href="medias/Clean and Dance - An Jone.mp3">Clique aqui pra baixar o áudio.</a> </p>
+    </audio>
+    <h1>Adicionando Vídeo</h1>
+    <p>Você consegue também adicionar vídeos. Basta usar a TAG "VIDEO" e como o áudio ele também será incorporado.</p>
+    <video src="medias/video.mp4" height="30%" width="30%" controls></video>
+    <!--Muito cuidado com essa hospedagem pois carrega muito o seu servidor, e pesa no bolso.-->
+    <p>Dá para colocar vídeos do YouTube por ex:</p>
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/5L4DQfVIcdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+</html>
+
+</html>

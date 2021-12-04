@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+
+<body>
+    <h1>Usando link externo</h1>
+    <p>Você pode acessar meu <a href="https://www.github.com/rc-rebello" target="_blank" rel="external">repositório no github</a>.</p>
+    <p>Para que o link abra em outra página usamos na TAG &lt;a&gt; a marcação target="_blank" - Para abrir em uma página em branco, e podemos usar o rel="external" que mostra ao código que é uma relação com código externo.</p>
+    <p>Você também pode acessar meu <a href="https://www.linkedin.com/in/raphael-costa-a4219a84/" target="_blank" rel="external">linkedin</a>.</p>
+    <h2>Link Interno</h2>
+    <p>Aqui a gente coloca o link para uma outra página dentro do nosso site. Há dois jeitos de fazer isso.</p>
+    <ol>
+        <li>Criando um novo arquivo, usando o href="seu_arquivo.html" e linkar.</li>
+        <ul>
+            <li>Assim: <a href="cap10-002.html" rel="next">Clica aqui</a></li>
+        </ul>
+        <li>Outro meio é linkar essa página a outra dentro de uma outra pasta, usando o caminho até ela. Ex:</li>
+        <ul>
+            <li>Clicando <a href="/aulas/CAP 9/cap9-aulas.html" target="_self" rel=" next ">aqui</a>, você vai abrir a aula do cap 09</li>
+        </ul>
+    </ol>
+    <h2>Links Para Download</h2>
+    <p>Criar links para download é quase como a criação dos links ancora &lt;a&gt; porém com algumas informações adicionais.</p>
+    <p>Precisa saber o mediatype - pra isso a gente usa um guia: iana.org/assignments/media-types</p>
+    <ul>
+        <li>Baixe <a href="/aulas/CAP 10/links-down/CV-TI-Pt-BR.pdf" download="Cv-PT.pdf" type="application/pdf">aqui</a> o PDF em português.</li>
+        <li>Baixe <a href="/aulas/CAP 10/links-down/CV-TI-ENG.pdf" download="Cv-EN.pdf" type="application/pdf">aqui</a> o PDF em inglês.</li>
+        <li>Baixe <a href="/aulas/CAP 10/links-down/cv2.rar" download="CV.rar" type="application/rar">aqui</a> o arquivo rar.</li>
+    </ul>
+
+</body>
+
+</html>
